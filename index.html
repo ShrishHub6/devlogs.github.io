@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="calculator">
+    <label for="result"></label>
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+        <button onclick="clearAll()">C</button>
+        <button class="operator" onclick="append('%')">%</button>
+        <button onclick="backspace()">⌫</button>
+        <button class="operator" onclick="append('/')">➗</button>
+
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button class='operator' onclick="append('*')">*</button>
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button class='operator' onclick="append('-')">-</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button class='operator' onclick="append('+')">+</button>
+
+        <button onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button class="operator" onclick="calculate()">=</button>
+        <button onclick="absolute()">Abs</button>
+
+        <button onclick="location.reload()">Renew</button>
+
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

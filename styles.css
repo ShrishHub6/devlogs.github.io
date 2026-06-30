@@ -1,0 +1,60 @@
+body {
+    background-color: #5e0ded;
+    font-size: medium;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+button {
+    border: none;
+    background-color: darkorchid;
+    font-family: Arial, Poppins, sans-serif;
+    width: 50px;
+    height: 40px;
+
+}
+
+button.operator {
+    background-color: darkorange;
+    width: 50px;
+    height: 40px;
+}
+
+button.operator:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+button.operator:active {
+    background-color: orange;
+    cursor: pointer;
+}
+
+button.operator:focus {
+    background-color: orange;
+    outline: none;
+}
+
+button:hover {
+    background-color: mediumorchid;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: orchid;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    button {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
